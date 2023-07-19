@@ -4,13 +4,13 @@ import java.time.LocalDate;
 
 public class User {
     private Integer id ;
-     private String nmae;
+     private String name;
      private LocalDate birthDate;
 
-    public User(Integer id, String nmae, LocalDate birthDate) {
+    public User(Integer id, String name, LocalDate birthDate) {
         super();
         this.id = id;
-        this.nmae = nmae;
+        this.name = name;
         this.birthDate = birthDate;
     }
 
@@ -22,12 +22,12 @@ public class User {
         this.id = id;
     }
 
-    public String getNmae() {
-        return nmae;
+    public String getName() {
+        return name;
     }
 
-    public void setNmae(String nmae) {
-        this.nmae = nmae;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public LocalDate getBirthDate() {
@@ -42,7 +42,7 @@ public class User {
     public String toString() {
         return "User{" +
                 "id=" + id +
-                ", nmae='" + nmae + '\'' +
+                ", name='" + name + '\'' +
                 ", birthDate=" + birthDate +
                 '}';
     }
